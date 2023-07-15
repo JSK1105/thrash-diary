@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FILL DETAILS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body{margin-top:20px;
+background-image: url(profile\ bg.jpg);
+color:#69707a;
+}
+.img-account-profile {
+    height: 10rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    color: black;
+}
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: black;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-borders .nav-link.active {
+    color: black ;
+    border-bottom-color: black;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.imagePreview {
+    width: 330px;
+    height: 300px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color: white;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:2px 3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+  width: 250px ;
+}
+.imgUp
+{
+  margin-bottom:15px;}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+/*.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow: 8px 2px 4px 2px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}*/
+.col-sm-2 p{
+  width: 300px;
+  padding: 12px;
+  border: 3px solid black;
+  margin: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: #0061f2;
+
+}
+.btn-hover{
+    width: 175px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+a{
+    text-decoration: none;
+}
+
+/*----------------------------- footer--------------------------*/
+footer {
+	background: #101010;
+	padding: 60px 0;
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+  background-color: none;
+  font-style: italic;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style-type:square;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: white;
+	display: block;
+	transition: all 0.3s ease;
+}
+.single-box ul li:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.single-box h2::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.single-box ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.single-box img{
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+}
+.single-box img:hover {
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+}
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+.socials i {
+    cursor: pointer;
+    display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.socials i:hover{
+    color: #24262b;
+	background-color: #ffffff;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+::-webkit-scrollbar{
+  width: 15px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+  background: #b7ac7f;
+  border-radius: 10px;
+}
+span i{
+    cursor: pointer;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="container-xl px-4 mt-4">
+
+<nav class="nav nav-borders">
+<a class="nav-link active ms-0"><h2>SKETCH-up</h2></a>
+</nav>
+<hr class="mt-0 mb-4">
+<div class="row">
+<div class="col-xl-4">
+
+<div class="card mb-4 mb-xl-0">
+<div class="card-header">PROFILE PICTURE</div>
+<div class="card-body text-center">
+<div class="container">
+    <div class="cont">
+        <div class="col-sm-2 imgUp">
+          <div class="imagePreview"></div>
+            <label class="btn btn-primary-a">
+                <p class="btn-hover color-3">UPLOAD</p>
+                <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;"></label>
+        </div><!-- col-2 -->
+    <!--<i class="fa fa-plus imgAdd"></i>-->
+    </div><!-- row -->
+</div><!-- container -->
+
+<!--<img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt>-->
+<div class="small font-italic text-muted mb-4"><b>JPG or PNG no larger than 5 MB</b></div>
+
+<!--<button class="btn btn-primary" type="button">Upload new image</button>-->
+</div>
+</div>
+</div>
+<div class="col-xl-8">
+
+<div class="card mb-4">
+<div class="card-header">Account Details</div>
+<div class="card-body">
+<form>
+
+<div class="mb-3">
+<label class="small mb-1" for="inputUsername"><b>Username </b>( How your name will appear to other users on the site )</label>
+<input class="form-control" id="inputUsername" type="text" placeholder="Enter your username">
+</div>
+
+<div class="row gx-3 mb-3">
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputFirstName"><b>First name</b></label>
+<input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name">
+</div>
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputLastName"><b>Last name</b></label>
+<input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name">
+</div>
+</div>
+
+<div class="row gx-3 mb-3">
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputOrgName"><b>Organisation / University Name</b></label>
+<input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name">
+</div>
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputLocation"><b>Location</b> ( Your Address )</label>
+<input class="form-control" id="inputLocation" type="text" placeholder="Enter your location">
+</div>
+</div>
+
+<div class="mb-3">
+<label class="small mb-1" for="inputEmailAddress"><b>Email address</b></label>
+<input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address">
+</div>
+
+<div class="row gx-3 mb-3">
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputPhone"><b>Phone number</b></label>
+<input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number">
+</div>
+
+<div class="col-md-6">
+<label class="small mb-1" for="inputBirthday"><b>Birthday</b></label>
+<input class="form-control" id="inputBirthday" type="date" name="birthday"  placeholder="DD / MM / YYYY">
+</div>
+</div>
+<br>
+
+<a href="loader.html"><button class="btn btn-primary" type="button">Save changes</button></a>
+</form>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <a href="about.html"><img src="images and vdos/logo.jpg" alt="logo"></a>
+                <p><i></i>CREATE YOUR OWN HAPPINESS</i></p>
+              <!--<h3>We Accect</h3>-->
+              <!--<div class="card-area">
+                      <i class="fa fa-cc-visa"></i>
+                      <i class="fa fa-credit-card"></i>
+                      <i class="fa fa-cc-mastercard"></i>
+                      <i class="fa fa-cc-paypal"></i>
+              </div>-->
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <h2>UNIVERSITY</h2>
+              <ul>
+                  <li><a href="srm.html">SRM</a></li>
+                  <li><a href="vit.html">VIT</a></li>
+                  <li><a href="post.html">REC</a></li>
+              </ul>
+              </div>                    
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <h2>QUICK LINKS</h2>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="cdiarylogin.html">LOGIN</a></li>
+                  <li><a href="postup.html">POST</a></li>
+                  <li><a href="blog home.html">DIARIES</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="details.html">SKETCH</a></li>
+              </ul>
+              </div>                    
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <h2>NEWSLETTER</h2>
+                  <p>For any issues , for any updates , for more info ... Join our newsletter and follow us on social handles ! </p>
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2"><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1544449050%3A1688976581181512&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AeDOFXh9DP_YzZwM65mJ3-tRBoR6xwG3b1rPHfe52Ft-chcAQ2_KVOti87jwFFQlAAc9pvUPPBzn&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-long-arrow-right"></i></span></a>
+                  </div>
+                  <br>
+                  <h2>FOLLOW US ON </h2>
+                  <br>
+                  <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-github"></i>
+                      <i class="fa fa-twitter"></i>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	/*$(".imgAdd").click(function(){
+  $(this).closest(".cont").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary-a">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+});*/
+$(document).on("click", "i.del" , function() {
+// 	to remove card
+  $(this).parent().remove();
+// to clear image
+  // $(this).parent().find('.imagePreview').css("background-image","url('')");
+});
+$(function() {
+    $(document).on("change",".uploadFile", function()
+    {
+    		var uploadFile = $(this);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+            }
+        }
+      
+    });
+});
+</script>
+</body>
+</html>

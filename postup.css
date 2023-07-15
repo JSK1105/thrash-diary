@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300,800');
+*{margin: 0;padding: 0;box-sizing: border-box;overflow-x: hidden;}
+
+body{
+  background-image: url(post3.jpg);
+  display:flex;
+  justify-content:center;
+}
+
+.clipped {
+  display:flex;
+  align-items:flex-end;
+  height:100%;
+  line-height:1.2;
+  overflow:hidden;
+  background: url("post1.jpg") no-repeat #fff;
+  background-size: cover;
+  color: rgba(255,255,255,0.3);
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+}
+#title{
+  overflow:hidden;
+  color:#fff;
+  mix-blend-mode:difference;
+  padding:30px calc(15% - 20px);
+}
+input {
+  display: block;
+}
+.header {
+  height: 500px;
+  width: 100% - 2px;
+  overflow: hidden;
+  background-size: cover;
+  margin:20px 20px 0 20px;
+  border-radius:8px;
+  box-shadow:2px 3px 20px 0 rgba(0,0,0,0.3);
+}
+.container {
+  display: block;
+  width: 100%;
+  float: left;
+  max-width:800px;
+}
+.upload {
+  position:fixed;
+  right:40px;
+  top:40px;
+  width: 20%;
+  margin-left:10%;
+  display: block;
+  float: left;
+  overflow:visible;
+}
+input[name=titleInput]{
+  width:100%;
+  height:50px;
+  padding:10px 15px;
+  margin-bottom:10px;
+  font-size:.8em;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  border-radius:3px;
+  border:0;
+  box-shadow:2px 1px 10px 0 rgba(0,0,0,0.5);
+}
+#uploadFile{
+  display:none;
+}
+#uploadButton{
+  margin-bottom:20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  height:50px;
+  width:100%;
+  font-size:.8em;
+  background-color:white;
+  color:  black;
+  border-radius:3px;
+  border:0;
+  text-align:left;
+  padding:10px 15px;
+  box-shadow:2px 1px 10px 0 rgba(0,0,0,0.5);
+}
+content{
+  display:block;
+  padding:30px;
+  color:#fff;
+  opacity:.8;
+  padding:30px 15%;
+}
+h2{
+  font-size: 1.1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight:800;
+  letter-spacing:0.5pt;
+}
+hr{
+  margin:10px 0 10px 0;
+  width:30px;
+  height:6px;
+  background-color:#2980b9;
+  border:0;
+  text-align:left;
+}
+p{
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  overflow:hidden;
+}
+/*----------- comment box-----------------*/
+.boxxy{
+  color: white;
+  background-color: black;
+}
+.comment-box{
+    top: 70%;
+    left: 45%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+    width: 500px;
+
+}
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.comment-box input{
+    width :100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.comment-box textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.comment-box textarea:focus{
+    border: 1px solid black;
+    outline: 0;
+}
+.comment-box button{
+    border: 0;
+    padding: 10px 30px;
+    background: #86b0b6;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+.comment-box button:hover{
+    background-color: #718a8e;
+    cursor: pointer;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  position: absolute;
+  left: -16px;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+/*--------------------- footer----------------------------------*/
+
+/*------------------------------------------------------ scroll ------------------------------------*/
+::-webkit-scrollbar{
+  width: 15px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+  background: #b7ac7f;
+  border-radius: 10px;
+}
+/*------------------------------------- bot-------------------------------------*/
